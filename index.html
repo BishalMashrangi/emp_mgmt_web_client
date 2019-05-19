@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Employee Management Web Client</title>
+</head>
+<body>
+
+    <h2>Login Here</h2>
+   
+   
+        <table>
+            <tr>
+                <td>Username:</td>
+                <td>
+                    <input type = "text" name = "user" id="username">
+                     
+                </td>
+            </tr>
+
+            <tr>
+                <td>Password:</td>
+                <td>
+                    <input type = "Password" name = "user_pass" id="password">
+
+                </td>
+            </tr>
+                <tr>
+                    <td>
+                        <!-- Not yet a Member ?<a href=""> Register </a> -->
+                        <button id="login">Login</button>
+                    </td>
+                </tr>
+
+        </table>
+
+    
+
+    <script>
+        const button = document.getElementById('login')
+         button.addEventListener('click', function onclick(e){
+            //console.log('button clicked')
+
+            //this is the function that is going to be executed
+            const usernameNode = document.getElementById('username');
+            const passwordNode = document.getElementById('password');
+
+            const usernameValue = usernameNode.value;
+            const passwordValue = passwordNode.value;
+
+           // console.log(usernameValue, passwordValue);
+
+           // validate with express server
+
+
+            //retrive password 
+            //retrive username
+            // send a request to express server (fetch / axios)
+            // validate the user 
+            //finally send the user to dashboard 
+
+            
+
+        })
+        
+    </script>
+    
+</body>
+</html>
